@@ -1,0 +1,168 @@
+@font-face {
+  font-family: GothamLight;
+  src: url(./fonts/GothamLight.ttf);
+  font-family: Gotham;
+  src: url(./fonts/GothamMedium.ttf);
+  font-family: GothamBold;
+  src: url(./fonts/GothamBold.ttf);
+}
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Gotham;
+  font-size: 22px;
+  font-weight: 400;
+}
+body{
+  height: 100vh;
+}
+.maxContainer {
+  max-width: 71.25rem; /* equals 1140px*/
+}
+.hero {
+  background-image: url(./assets/bg-section-1.webp);
+  background-position: center center;
+  background-size: cover;
+  padding-top: 80px;
+}
+.hero > .maxContainer {
+  display: flex;
+}
+.hero > .maxContainer > div:first-child {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: end;
+  align-content: flex-start;
+  gap: 30px;
+  width: 50%;
+
+}
+.hero > .maxContainer > div > h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+}
+.hero > .maxContainer > div > h1 > strong {
+  font-size: 48px;
+  font-weight: 700;
+}
+.hero > .maxContainer > div > article {
+  width: 100%;
+}
+.box-white {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100%;
+}
+.title-bg-white {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+.title-bg-white > h2 {
+  padding: 20px 80px;
+  background-color: #fff;
+  color: #1c3664;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  width: 530px;
+}
+.hero > .maxContainer > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 50%;
+}
+.hero > .maxContainer > div:last-child > img {
+  width: 100%;
+}
+/*Section "Invista no seu futuro"*/
+.invistaNoSeuFuturo {
+  background-image: url(./assets/bg-section-2.webp);
+  background-position: center center;
+  background-size: cover;
+  padding-top: 80px;
+}
+.invistaNoSeuFuturo > .maxContainer {
+  display: flex;
+}
+.invistaNoSeuFuturo > .maxContainer > div:first-child {
+  color: #0f296d;
+}
+.invistaNoSeuFuturo > .maxContainer > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+/*Section "Objetivos do programa"*/
+.objetivosDoPrograma {
+  background-image: url(./assets/bg-section-3.webp);
+  background-position: center center;
+  background-size: cover;
+  padding-top: 80px;
+}
+.objetivosDoPrograma > .maxContainer {
+  display: flex;
+}
+.objetivosDoPrograma > .maxContainer > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.objetivosDoPrograma > .maxContainer > div:last-child {
+  color: #fff;
+}
+/*Section "Curriculo do programa*/
+.curriculoDoPrograma {
+  background: #1b347e url(./assets/bg-section-4-noise.webp);
+  background-position: center center;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  color: #fff;
+}
+.curriculoDoPrograma > .maxContainer > div {
+  font-family: "Gotham";
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+}
+.curriculoDoPrograma > .maxContainer > div > details {
+  display: block;
+  width: 50%;
+  background: #0f296d;
+}
+.curriculoDoPrograma > .maxContainer > div > details > summary {
+  display: flex;
+  border-radius: 0px 0px 20px 20px;
+  background: #013590;
+  color: #fff;
+  cursor: pointer;
+  padding: 20px;
+  justify-content: flex-start;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.curriculoDoPrograma
+  > .maxContainer
+  > div
+  > details
+  > summary::-webkit-details-marker {
+  display: none;
+}
+.curriculoDoPrograma > .maxContainer > div > details > p {
+  padding: 20px 20px 0 30px;
+}
+.curriculoDoPrograma > .maxContainer > div > details > p:last-child {
+  padding-bottom: 30px;
+}
