@@ -1,13 +1,20 @@
 @font-face {
-  font-family: Gotham;
+  font-family: "Gotham";
   src: url(./fonts/GothamMedium.ttf);
+}
+@font-face {
+  font-family: "GothamLight";
+  src: url(./fonts/GothamLight.ttf);
+}
+@font-face {
+  font-family: "GothamBold";
+  src: url(./fonts/GothamBold.ttf);
 }
 
 * {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  font-family: Gotham;  
 }
 
 p{
@@ -28,13 +35,14 @@ p{
 }
 
 .cta{
+  font-family: Gotham;  
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  margin-bottom: 50px;
-  gap: 20px;
+  margin-bottom: 90px;
+  gap: 40px;
   z-index: 2;
 }
 
@@ -71,6 +79,7 @@ p{
   font-family: 'Gotham';
   padding: 20px 30px;
   margin-right: 100px;
+  margin-top: 30px;
   text-align: center;
   line-height: normal;
   font-weight: 700;
@@ -89,7 +98,6 @@ p{
 .container-azul{
   font-size: 22px;
   background-color:#013590;
-  
   color: #fff;
   padding: 10px 20px;
   font-weight: 400;
@@ -110,7 +118,11 @@ p{
   padding: 20px 60px;
   border-radius: 60px;
 }
-
+.btnHero:hover{
+  background-color: #00000020;
+  transition-duration: 0.5s;
+}
+/* Definições da sessão hero */
 .hero>.maxContainer{
   max-width: 1140px;
   width: 1140px;
@@ -127,9 +139,177 @@ p{
   margin: 0 auto;
 }
 
-.hero>.maxContainer {
+/*Aqui começa a Section 2 - Definições gerais da sessão*/
+
+.invistaNoSeuFuturo{
+  background-image: url(./assets/bg-section-2.webp);
+  background-position: center;
+  background-size: cover;
+  padding-top: 80px;
+  margin: 0 auto;
+}
+
+.invistaNoSeuFuturo>.maxContainer{
+  max-width: 1140px;
+  width: 1140px;
   display: flex;
+  flex-direction: row;
+  align-items: end;
 }
 
 
+/*Sessão 2 - Elementos */
+.modeloSection2{
+  width: 50%;
+  display: flex;
+}
 
+.modeloSection2>img{
+  max-width: 500px;
+}
+
+.ctaSection2{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 90px;
+  gap: 40px;  
+  color: #0F296D;
+}
+
+.tituloSection2{
+  width: 100%;
+}
+
+.tituloSection2>h1{
+  font-family: "Gotham";  
+  font-size: 36px;
+}
+
+.tituloSection2>h1>strong{
+  font-family: "GothamBold";
+  font-weight: 900;
+}
+
+.textoSection2{
+  width: 100%;
+}
+
+.textoSection2>p{
+  font-family: "GothamLight";
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.textoSection2>p>strong{
+  font-weight: 700;
+}
+/* Elemento com linha lateral */
+
+.box-border-left{
+  display: flex;
+  flex-direction: column;
+  font-family: "Gotham";  
+  width: 100%;
+  padding: 20px 0px 20px 30px;
+  border: solid #0F296D;
+  border-width: 0px 0px 0px 10px;
+  gap: 50px;
+}
+
+/* Conteudo Linha de pesquisa da aba lateral*/
+
+.linha-de-pesquisa{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 20px;
+}
+
+.linha-de-pesquisa>p{
+  width: 100%;
+}
+
+.texto1BoxSection2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 38px;
+}
+
+
+.texto1BoxSection2>div{
+  width: 100px;
+}
+
+.texto1BoxSection2>div>img{
+  width: 100%;
+}
+
+.texto1BoxSection2>p{
+  width: 100%;
+  display: inline;
+  text-align: left;
+  font-family: "GothamLight";
+}
+
+/* Conteudo Socioambiental da aba lateral*/
+
+.socioambiental{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 20px;
+}
+
+.socioambiental>p{
+  width: 100%;
+}
+
+.texto2BoxSection2{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 38px;
+}
+
+.texto2BoxSection2>div{
+  width: 100px;
+}
+
+.texto2BoxSection2>div>img{
+  width: 100%;
+}
+
+.texto2BoxSection2>p{
+  width: 100%;
+  display: inline;
+  text-align: left;
+  font-family: "GothamLight";
+}
+
+.ctaBotaoSection2{
+  width: 100%;
+  padding-top: 50px;
+}
+
+.ctaBotaoSection2>a{
+  font-family: "Gotham";
+  color: #0F296D;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #0F296D;
+  border-radius: 30px;
+  padding: 20px 80px;
+}
+.ctaBotaoSection2>a:hover{
+  background-color: #00000020;
+  transition-duration: 0.5s;
+}
